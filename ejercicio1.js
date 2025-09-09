@@ -1,10 +1,6 @@
-function ejemplowhile(){
-const k = 15;
-let j = 0;
-while(j <= k){
-    console.log(j);
-    j = j +1;
-}
-
-console.log("fuera el while",j);
-}
+// elemento de HTML
+const button = document.querySelector('.alert');
+// handler
+const showAlert = () => console.log('Alerta');
+// listener sobre el elemento, con tipo de evento y handler
+button.addEventListener('click', showAlert);
